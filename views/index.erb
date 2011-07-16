@@ -1,9 +1,9 @@
 <%=session['fb_error']%>
 
 <% if session['fb_auth'] %>
-  <a href='logout'><img src='images/fb_logout_button.png'></a>
+  <a href='logout'><img src='http://www.mywindowsphone.net/images/facebookLogOutButton.png'></a>
 <% else %>
-  <a href='auth/facebook'><img src='images/fb_login_button.png'></a>
+  <a href='auth/facebook'><img src='http://static.cdn.beautylish.com/icons/facebook_login_button.png'></a>
 <% end %>
 
 <h3><%= 'Hello, ' + session['fb_auth']['user_info']['first_name'] + ', ' if session['fb_token'] %>Welcome to my list of interesting articles.</h3>
