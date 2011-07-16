@@ -13,12 +13,8 @@ end
 
 get '/' do
     @articles = []
-    @articles << {:title => 'What is Ramadan? An Explanation by Yusuf Islam', :url => 'http://www.youtube.com/watch?v=Ta8j1z5LkJo'}
-    @articles << {:title => 'My first Ramadan', :url => 'http://www.youtube.com/watch?v=DOaET--aai8&feature=related'}
-    @articles << {:title => 'Ramadan Explained by the BBC', :url => 'http://www.bbc.co.uk/religion/religions/islam/practices/ramadan_1.shtml'}
-    @articles << {:title => 'Birmingham Ramadan Timetable', :url => 'http://www.ramadantimetable.co.uk/ramadantimetable-uk/birmingham'}
-
-
+    @articles << {:title => 'Deploying Rack-based apps in Heroku', :url => 'http://docs.heroku.com/rack'}
+    @articles << {:title => 'Learn Ruby in twenty minutes', :url => 'http://www.ruby-lang.org/en/documentation/quickstart/'}
 
     erb :index
 end
