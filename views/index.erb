@@ -27,19 +27,16 @@
   <p><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Ffaceboku.heroku.com%2F&amp;layout=standard&amp;show_faces=true&amp;width=450&amp;action=like&amp;colorscheme=light&amp;height=80" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:450px; height:80px;" allowTransparency="true">
 </p>
 <p>
-<comments>
-        callbackurl="http://stormy-meadow-226.heroku.com/"
-        url="http://apps.facebook.com/stormy-meadow/"
-        returnurl="http://apps.facebook.com/stormy-meadow/"
-        xid="your_page_comments"
-        canpost="true"
-        candelete="true"
-        simple="1"
-        width="425"
-        title="Your Page"
-        publish_feed="false" >
-</comments>
 
+
+<fb:serverFbml style="margin-top:15px;">  
+            <script type="text/fbml">  
+                <fb:fbml> 
+                    <fb:comments xid="project_1" publish_feed="false" showform="true" canpost="true" numposts="50" width="467px"><fb:title>Comment on this project</fb:title></fb:comments>
+                </fb:fbml>
+            </script>
+        </fb:serverFbml>
+ 
 </iframe></p>
 
 <% end %>
