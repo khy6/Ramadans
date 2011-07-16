@@ -17,8 +17,8 @@ get '/' do
     @articles << {:title => 'My first Ramadan', :url => 'http://www.youtube.com/watch?v=DOaET--aai8&feature=related'}
     @articles << {:title => 'Ramadan Explained by the BBC', :url => 'http://www.bbc.co.uk/religion/religions/islam/practices/ramadan_1.shtml'}
     @articles << {:title => 'Birmingham Ramadan Timetable', :url => 'http://www.ramadantimetable.co.uk/ramadantimetable-uk/birmingham'}
-@articles << {:title => 'Fasting May Help Lessen Heart Risks', :url => 'http://www.foxnews.com/story/0,2933,316348,00.html'}
-@articles << {:title => ', Muslims learn the value of patience and perseverance', :url => 'http://www.theolympian.com/2011/07/15/1725254/through-fasting-muslims-learn.html'}
+
+
 
     erb :index
 end
