@@ -15,7 +15,7 @@ get '/' do
     @articles = []
     @articles << {:title => 'Deploying Rack-based apps in Heroku', :url => 'http://docs.heroku.com/rack'}
     @articles << {:title => 'Learn Ruby in twenty minutes', :url => 'http://www.ruby-lang.org/en/documentation/quickstart/'}
-
+    @articles << {:title => 'What is ramadan ?', :url => 'http://www.bbc.co.uk/religion/religions/islam/practices/ramadan_1.shtml'}
     erb :index
 end
 
