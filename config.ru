@@ -1,3 +1,3 @@
-require 'faceboku' #this is to load faceboku.rb
+require 'ramadans' #this is to load faceboku.rb
 
 run Sinatra::Application
