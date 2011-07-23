@@ -19,7 +19,7 @@ get '/' do
     erb :index
 end
 
-get '/auth/facebook/callback' do
+post '/auth/facebook/callback' do
   session['fb_auth'] = request.env['omniauth.auth']
   session['fb_token'] = session['fb_auth']['credentials']['token']
   session['fb_error'] = nil
