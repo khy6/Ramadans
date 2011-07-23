@@ -10,7 +10,7 @@ use OmniAuth::Builder do
   provider :facebook, APP_ID, APP_SECRET, { :scope => 'email, status_update, publish_stream' }
 end
 
-get '/' do
+post '/' do
     @articles = []
     @articles << {:title => 'Introduction to Heroku', :url => 'http://docs.heroku.com/heroku'}
     @articles << {:title => 'Deploying Rack-based apps in Heroku', :url => 'http://docs.heroku.com/rack'}
@@ -26,13 +26,13 @@ post '/auth/facebook/callback' do
   redirect '/'
 end
 
-get '/auth/failure' do
+post '/auth/failure' do
   clear_session
   session['fb_error'] = 'In order to use this site you must allow us access to your Facebook data<br />'
   redirect '/'
 end
 
-get '/logout' do
+post '/logout' do
   clear_session
   redirect '/'
 end
